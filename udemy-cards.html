@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <style>
         .card{
-            width: 200px;
+            width: 250px;
             padding: 5px;
             margin: 10px;
+            box-shadow: 15px 8px 5px rgb(209, 207, 207);
             
         }
         .card-header img{
@@ -31,33 +32,45 @@
             
         }
         .rating{
-            color: goldenrod;
+            color: rgb(227, 167, 15);
             font-size: 15px;
+
+        }
+        .option{
+            display: flex;
+            flex-direction: row;
         }
         .option-1{
             background-color: rgb(97, 97, 217);
             width: 50%;
-            height: 30px;
-            padding: 4px;
+            height: 20px;
+            padding: 5px;
         }
         .opt{
             background-color: rgb(162, 190, 121);
-            padding: 5px;
+            padding: 5px ;
+            height: 20px;
+            width: 50%;
+            margin-left: 20px;
         }
-        .main{
+        main{
             display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 20px;
+
         }
     </style>
 </head>
 <body>
-    <main>
+    <main class="main">
         <div class="card">
             <div class="card-header">
                 <img src="images/graphic_design.png">
             </div>
             <div class="card-body">
                 <div class="card-title"> <b>Great Gaphic Design!!</b></div>
-                <div class="cardbody-footer">Lindsay Marsh</p>
+                <div class="cardbody-footer">Lindsay Marsh</p></div>
                 <div  class="rating">4.6 
                     <span class="bi bi-star-fill"></span>
                     <span class="bi bi-star-fill"></span>
@@ -73,9 +86,12 @@
                 </div>
             </div>
             <div class="option">
-            <div class="option-1">
-                Premium<span class="bi bi-patch-check"></span>
-                <span class="opt">Bestseller</span>
+                <div class="option-1">
+                    <span class="bi bi-patch-check">Premium</span>
+                </div>
+                    <div class="opt">
+                    <span>Bestseller</span>
+                </div>
             </div>
         </div>
 
@@ -86,7 +102,7 @@
             </div>
             <div class="card-body">
                 <div class="card-title"><b>Gaphic Theory</b></div>
-                <div class="cardbody-footer">Video School,Mario Macari,Phillip</p>
+                <div class="cardbody-footer">Video School,Mario Macari,Phillip</p></div>
                 <div class="rating">4.3
                     <span class="bi bi-star-fill"></span>
                     <span class="bi bi-star-fill"></span>
@@ -103,7 +119,8 @@
             </div>
             <div class="option">
             <div class="option-1">
-                Premium<span class="bi bi-patch-check"></span>
+                <span class="bi bi-patch-check">Premium</span>
+            </div>
             </div>
         </div>
     
@@ -114,7 +131,7 @@
             </div>
             <div class="card-body">
                 <div class="card-title"> <b>Adobe Photoshop</b></div>
-                <div class="cardbody-footer">Phil Ebinar,Video School</p>
+                <div class="cardbody-footer">Phil Ebinar,Video School</p></div>
                 <div class="rating">4.7
                     <span class="bi bi-star-fill"></span>
                     <span class="bi bi-star-fill"></span>
@@ -131,7 +148,8 @@
             </div>
             <div class="option">
             <div class="option-1">
-                Premium<span class="bi bi-patch-check"></span>
+                <span class="bi bi-patch-check">Premium</span>
+            </div>
             </div>
         </div>
 
